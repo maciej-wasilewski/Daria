@@ -18,44 +18,63 @@ html {
 
 /* Body background color */
 body {
-    background: #111;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Section styles with padding and negative margin top */
 section {
-    padding: 5rem 9%;
+    padding: 20px;
     margin-top: -80px;
 }
 
 /* Heading styles */
-.heading {
+.section-heading {
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
+    z-index: 999;
 }
 
-/* Heading separator line */
-.heading::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: .1rem;
-    width: 100%;
-    background-color: hsl(0, 0%, 93%);
-    z-index: -1;
+.section-heading::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: .1rem;
+        width: 100%;
+        background-color: #C6A85F;
+        z-index: -1;
+ }
+
+.section-heading span {
+        font-size: 3rem;
+        color: #C6A85F;
+        background: #fff;
+        padding: .5rem 1.5rem;
+        border: .1rem solid#C6A85F;
+        border-radius: 0.5rem;
 }
 
-/* Heading span styles */
-.heading span {
-    font-size: 3rem;
-    color: #C6A85F;
-    background: #111;
-    padding: .5rem 1.5rem;
-    border: .1rem solid hsl(0, 0%, 93%);
-    border-radius: 0.5rem;
+/* Apply margin-top to the first section heading */
+.section-heading:first-child {
+    margin-top: 100px; /* Adjust the value as needed */
 }
+
+.home,
+.about,
+.features,
+.pricing,
+.contact {
+    margin-bottom: 0; /* Adjust the value as needed */
+    /* ... (Other styles) ... */
+}
+
 
 /* Home section */
 .home {
@@ -88,86 +107,108 @@ section {
 .about {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: -67px;
     gap: 8rem;
-    margin-top: 150px;
+    background-color: #C6A85F;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: -20px;
+
+    
 }
 
 /* About image styles */
 .about .image {
-    flex: 1 1 calc(50% - 4rem);
+    flex: 1 1 calc(50% - 3rem);
     position: relative;
+    border: solid #fff 4px;
 }
 
-/* About image shapes */
-.about .image::before,
-.about .image::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background: #C6A85F;
-    height: 15rem;
-    width: 15rem;
-}
 
-.about .image::before {
-    top: 0;
-    left: 10px;
-}
-
-.about .image::after {
-    bottom: 0;
-    right: 0;
-}
-
-/* About image content styles */
 .about .image img {
     width: 100%;
-    padding: 1rem;
+    height: auto;
 }
 
 /* About content styles */
 .about .content {
     flex: 1 1 calc(50% - 4rem);
     position: relative;
-}
-
-/* About heading 2 styles */
-.about .content h2 {
-    font-size: 3rem;
-    color: #C6A85F;
-    font-weight: 900;
+    top: -100px;
 }
 
 /* About paragraph styles */
 .about .content p {
     color: #fff;
-    margin-top: 20px;
+    font-size: 2rem;
 }
 
+/* Add decoration to the .feature-content div on the right side */
+
+.features {
+    background: #fff;
+}
 /* Features list container */
-.features .list-container {
+.features .feature-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin-top: 300px;
+    justify-content: space-between; /* Push the image to the right and the list to the left */
+    align-items: center; /* Vertically center the content */
+    padding: 100px;
 }
 
 /* Features list styles */
-.features .list-container ul {
-    height: auto;
-    width: auto;
+.features .feature-content img {
+    width: 684px; /* Adjust the image width as needed */
+    height: 901.333px; /* Maintain aspect ratio */
+    margin-top: 100px;
+    border:solid #C6A85F 4px;
+}
+
+/* Style for the list (adjust margin and other properties as needed) */
+.features .feature-content ul {
+    margin-top: 60px;
+    margin-right: 70px;
+    list-style: disc;
     color: #C6A85F;
 }
 
-.features .list-container li {
-    padding: 2rem;
+.features .feature-content ul li {
+    padding: 10px 0;
+    /* Other list item styles */
 }
 
-.features .list-container li span {
-    font-size: 2rem;
+.features .feature-content ul li span {
+    color: #C6A85F;
+    font-size: 1.5rem;
 }
+
+/* Q&A section styles */
+.qa {
+    padding: 100px;
+    background-color:#C6A85F;
+    margin-bottom: -35px;
+}
+
+/* Q&A item styles */
+.qa-item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.qa-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.qa-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
 
 /* Pricing section styles */
 .pricing {
@@ -175,20 +216,21 @@ section {
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 /* Pricing plan styles */
 .pricing .plan {
     text-align: center;
     padding: 5rem;
+    margin-left: 100px;
 }
 
 /* Pricing heading 3 styles */
 .pricing .plan h3 {
     font-size: 2.5rem;
     margin: 1rem 0;
-    color: #fff;
+    color: #000;
 }
 
 /* Pricing price styles */
@@ -199,7 +241,7 @@ section {
 }
 
 .pricing .plan .price span {
-    color: #fff;
+    color: #000;
     font-size: 2rem;
 }
 
@@ -208,7 +250,7 @@ section {
     line-height: 2;
     padding: 1rem 0;
     font-size: 1.4rem;
-    color: #fff;
+    color: #000;
 }
 
 .pricing .plan p i {
@@ -222,6 +264,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #C6A85F;
 }
 
 /* Contact telephone styles */
@@ -235,7 +278,7 @@ section {
 
 .contact .telefon i {
     padding-right: 1rem;
-    color: #C6A85F;
+    color: #fff;
     font-size: 80px;
 }
 
@@ -251,7 +294,7 @@ section {
 .contact .instagram i {
     padding-right: 1rem;
     font-size: 80px;
-    color: #C6A85F;
+    color: #fff;
     padding-bottom: 20px;
 }
 
@@ -275,6 +318,126 @@ section {
 
     .home .content h3 {
         font-size: 4rem;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 50px;
+        margin-bottom: -30px;
+    }
+
+    .about .image {
+        flex: 1 1 100%;
+    }
+
+    .about .content {
+        flex: 1 1 100%;
+        margin-bottom: 2rem; /* Adjust margin as needed */
+    }
+
+    .about .content p {
+        margin-top: 13rem; /* Adjust margin as needed */
+        font-size: 3rem;
+    }
+
+    .features .feature-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2cap; /* Adjust padding as needed */
+    }
+
+
+    .features .feature-content img {
+            flex: 1 1 100%
+        
+    }
+
+    .features .feature-content ul {
+        margin-left: 0; /* Reset left margin for the list */
+        margin-top: 20px; /* Add margin-top for spacing */
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .pricing .plan {
+        margin-left: 0; /* Reset margin for individual plans */
+        text-align: center; /* Center align the plans */
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    
+    }
+
+}
+
+@media (max-width: 767px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about .image {
+        flex: 1 1 100%;
+    }
+
+    .about .content {
+        flex: 1 1 100%;
+        margin-top: 2rem; /* Adjust margin as needed */
+    }
+
+    .features .feature-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    .features .feature-content::before,
+    .features .feature-content::after {
+        display: none; /* Remove the decorative shapes */
+    }
+
+    .features .feature-content img {
+            flex: 1 1 100%;
+    
+    }
+
+    .features .feature-content ul {
+        margin-left: 0; /* Reset left margin for the list */
+        margin-top: 20px; /* Add margin-top for spacing */
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .pricing .plan {
+        margin-left: 0; /* Reset margin for individual plans */
+        text-align: center; /* Center align the plans */
+
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        gap: 2rem;
+    }
+
+    .contact .telefon,
+    .contact .instagram {
+        margin-top: 0; /* Reset margin-top for contact items */
     }
 }
 

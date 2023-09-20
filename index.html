@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="footer-style.css">
   <link rel="stylesheet" href="daria.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" href="assets\img\ico2.png">
 </head>
@@ -34,46 +33,25 @@
     </header> 
     <section class="home">
 
-        <div class="swiper home-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide slide" style="background: url(./12.png) no-repeat;">
+                <div class="slide" style="background: url(marcinidaria.jpg) no-repeat;">
                     <div class="content">
                         <h3>Daria</h3>
                     </div>
                 </div>
-
-                <div class="swiper-slide slide" style="background: url(./image-20-09-22-10-15.jpeg) no-repeat;">
-                    <div class="content">
-                        <h3>Daria</h3>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide" style="background: url(./IMG_E4362.JPG) no-repeat;">
-                    <div class="content">
-                        <h3>Daria</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev" style="color: white;"></div>
-            <div class="swiper-button-next" style="color: white;"></div>
-        </div>
     </section>
 
-   
+
+
+    <h1 class="section-heading"><span>Kim jestem</span></h1>
 
     <section class="about" id="about">
 
-
+        
         <div class="image">
             <img src="./5.JPG" alt="daria">
         </div>
 
         <div class="content">
-            <h2>O mnie</h2>
             <p> Jestem trenerką kobiet i specjalizuje się w treningach siłowych,
                  rozciąganiu oraz pilatesie. Ze mną przekonasz się jak wiele zdrowotnych korzyści
                   może wynikać z uprawnienia regularnej aktywności fizycznej!</p>    
@@ -81,11 +59,13 @@
 
     </section>
 
+    <h1 class="section-heading"><span>Pomogę Ci</span></h1>
+
     <section class="features" id="features">
 
-        <h1 class="heading"><span>Pomogę Ci</span></h1>
+        
 
-        <div class="list-container">
+        <div class="feature-content">
             <ul>
                 <li><span>nauczyć prawidłowej techniki wykonania ćwiczeń</span></li>
                 <li><span>rozluźnić mięśnie i złagodzić napięcie w poszczególnych partiach mięśni</span></li>
@@ -95,28 +75,59 @@
                 <li><span>utrzymać motywację do treningów</span></li>
                 <li><span>złagodzić stres i miło spędzić czas w trakcie ćwiczeń</span></li>
             </ul>
-            
+            <img src="12.jpg" alt="daria">
         </div>
     </section>
 
+    <h1 class="section-heading"><span>Q & A</span></h1>
+
+    <section class="qa" id="qa">
+        <h1 class="section-heading">Q & A</h1>
+    
+        <div class="qa-item">
+            <h2>Nie lubię ćwiczyć ale chcę zmienić swoją sylwetkę. Jak mi możesz pomóc?</h2>
+            <p>Spokojnie, dobierzemy odpowiedni rodzaj trening i oprzemy na nim plan treningowy. Uwzględnię każde twoje życzenie.</p>
+        </div>
+    
+        <div class="qa-item">
+            <h2>Jak szybko mogę osiągnąć pożądany cel treningowy?</h2>
+            <p>To wszystko będzie zależeć od Twojego zaangażowania oraz Twojej budowy ciała, regularności w treningach i odpowiedniego odżywiania.
+                 Ze swojej strony zrobię wszystko co w moich siłach! </p>
+        </div>
+    
+        <div class="qa-item">
+            <h2>Czemu akurat Ty?</h2>
+            <p>Uwielbiam pomagać ludziom! Każdego podopiecznego traktuje jak swojego przyjaciela i staram się dostosować do niego dostosować,
+                 aby poprawiać jego zdrowie i życie.</p>
+        </div>
+    </section>
+    
+
+    <h1 class="section-heading"><span>Oferta</span></h1>
+
     <section class="pricing" id="pricing">
+        
 
 
         <div class="plan">
             <h3>TRENING PERSONALNY</h3>
-            <div class="price"><span>PLN</span>200</div>
+            <div class="price">200 <span>PLN</span></div>
             <p> <i class="fas fa-check"></i> 60 MINUT</p>
+            <p> <i class="fas fa-check"></i> trening/konsultacje 1na1</p>
         </div>
 
         <div class="plan" id="treningowy">
             <h3>PAKIET TRENINGOWY</h3>
-            <div class="price"><span>PLN</span>1200</div>
+            <div class="price">1200 <span>PLN</span></div>
             <p> <i class="fas fa-check"></i> 8 TRENINGÓW</p>
             <p> <i class="fas fa-check"></i> KAŻDY TRENING 60 MINUT</p>
         </div>
     </section>
 
+    <h1 class="section-heading"><span>Kontakt</span></h1>
+
     <section class="contact" id="contact">
+        
 
         <div class="telefon">
             <p><i class="fas fa-phone fa-2xl"></i>+48 793 672 329</p>
@@ -164,7 +175,6 @@
           header.classList.toggle("sticky", window.scrollY > 0);
         });
         </script>
-        <script src="script.js"></script>
         
 </body>
 </html>
