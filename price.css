@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* Center-align the content of the pricing section */
+#pricing {
+  text-align: center;
+}
+
+/* Style the heading */
+
+/* Style the plan containers (boxes) */
+.plan {
+  display: inline-block;
+  margin: 10px 1%;
+  font-family: 'Lato', Arial, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: solid #f7be2f 4px;
+  /* Add any other styling for pricing plans */
+}
+
+/* ... Rest of your CSS for .plan classes ... */
+
+
+.plan-inner {
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 100%;
+  position:relative;
+}
+
+.entry-title {
+  background: #0000FF;
+  height: 140px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.entry-title>h3 {
+  background: #0000FF;
+  font-size: 20px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.entry-title .price {
+  position: absolute;
+  bottom: -25px;
+  background: #0000FF;
+  height: 95px;
+  width: 95px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.pricing span {
+  position: absolute;
+  font-size: 9px;
+  bottom: -10px;
+  left: 30px;
+  font-weight: 400;
+}
+
+.entry-content {
+  color: #323232;
+}
+
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.entry-content li {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0;
+}
+
+.entry-content li:last-child {
+  border: none;
+}
+
+.basic .entry-title {
+  background: #66FF00;
+}
+
+.basic .entry-title > h3 {
+  background: #66FF00;
+}
+
+.basic .price {
+  background: #66FF00;
+}
+
+.standard .entry-title {
+  background: #FFFF00;
+}
+
+.standard .entry-title > h3 {
+  background: #FFFF00;
+}
+
+.standard .price {
+  background: #FFFF00;
+}
+
+.ultimite .entry-title > h3 {
+  background: #FF0800;
+}
+
+.ultimite .entry-title {
+  background: #FF0800;
+}
+
+.ultimite .price {
+  background: #FF0800;
+}
