@@ -19,7 +19,7 @@ html {
 
 /* Body background color */
 body {
-    background: #fff;
+    background: #f4f4f4;
 }
 
 
@@ -87,35 +87,12 @@ section {
     position: relative;
     margin-top: -70px;
     gap: .1rem;
-    background: linear-gradient(135deg, #e3b94f 20%, #eed91c 100%);
     overflow: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: -20px;
 
     
-}
-
-.custom-shape-divider-top-1695307355 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1695307355 svg {
-    position: relative;
-    display: block;
-    width: calc(126% + 1.3px);
-    height: 324px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1695307355 .shape-fill {
-    fill: #FFFFFF;
 }
 
 /* About image styles */
@@ -129,7 +106,7 @@ section {
 .about .image img {
     width: 550px;
     height: 775px;
-    border: solid #fff 4px;
+    border: solid #C6A85F 4px;
     margin-left: 50px;
     margin-top: 50px;
 }
@@ -145,11 +122,11 @@ section {
 }
 
 .about .content h1 {
-    color: #FFFFFF;
+    color: #000;
     font-size: 77px;
     font-weight: 900;
     margin-bottom: 10px;
-    background: linear-gradient(120deg, #f7751f 60%, #f9bf2c 40%);
+    background-color: #C6A85F;
     padding: 33px 33px 33px 33px;
     width: 550px;
     height: 145px;
@@ -157,7 +134,8 @@ section {
 
 /* About paragraph styles */
 .about .content p {
-    color: #C6A85F;
+    color: #7a7a7a;
+    text-align: justify;
     font-size: 18px;
     background-color: #fff;
     padding: 33px 33px 33px 33px;
@@ -177,29 +155,12 @@ section {
     position: relative;
     margin-top: -70px;
     gap: .1rem;
-    background: linear-gradient(135deg, #e3b94f 20%, #eed91c 100%);
+    background-color: #C6A85F;
     overflow: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: -20px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('IMG_E4362.JPG');
     z-index: 0; /* Ensure the content is below the pseudo-element */
-    color: #fff;
-}
-
-.continuation::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
-    z-index: 1; /* Ensure it's above the background image */
 }
 
 .continuation .image {
@@ -222,28 +183,29 @@ section {
     position: relative;
     margin-top: 60px;
     margin-left: 100px;
-    text-align: center;
+    text-align: justify;
     padding: 1.5rem;
     z-index: 2;
 }
 
 .continuation .content h1 {
-    color: #f9bf2c;
+    color: #fff;
     font-size: 60px;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    background: #fff;
+    background: #000;
     padding: 33px 33px 33px 33px;
     width: 518px;
     height: 240px;
 }
 
 .continuation .content p {
-    color: #fff;
+    color: #7a7a7a;
     font-size: 18px;
-    background: linear-gradient(45deg, #f7751f 60%, #f9bf2c 40%);
+    line-height: 30px;
+    background-color: #fff;
     padding: 33px 33px 33px 33px;
     letter-spacing: 1px;
     width: 507px;
@@ -271,7 +233,7 @@ section {
 
 .features .content p {
     font-size: 18px; /* Adjust the font size as needed */
-    color: #C6A85F; /* Set an appropriate paragraph text color */
+    color: #7a7a7a; /* Set an appropriate paragraph text color */
 }
 
 .feature-content {
@@ -283,35 +245,11 @@ section {
 }
 
 .feature {
-    background: linear-gradient(135deg, #e3b94f, #eed91c);
+    background-color: #000;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     /* Add other styles for individual feature items */
-}
-
-#feature-1 {
-    background: linear-gradient(135deg, #e3b94f, #eed91c);
-}
-
-#feature-2 {
-    background: linear-gradient(135deg, #a62929, #ff0000);
-}
-
-#feature-3 {
-    background: linear-gradient(135deg, #363cb6, #1052eb);
-}
-
-#feature-4 {
-    background: linear-gradient(135deg, #7940b3, #a107e8);
-}
-
-#feature-5 {
-    background: linear-gradient(135deg, #2fac2d, #03fb13);
-}
-
-#feature-6 {
-    background: linear-gradient(135deg, #b43d8a, #f300be);
 }
 
 .feature i {
@@ -394,7 +332,7 @@ section {
 .custom-shape-divider-bottom-1695403821 svg {
     width: 100%;
     height: auto;
-    fill: #0000FF; /* Match the background color of the .qa section */
+    fill: #C6A85F; /* Match the background color of the .qa section */
     margin-bottom: -110px;
     margin-top: 150px;
 }
@@ -445,6 +383,7 @@ section {
     padding: 50px;
     margin-top: 50px;
     margin-top: 100px;
+    background-color: #f4f4f4;
 }
 
 .pricing .heading {
@@ -459,7 +398,7 @@ section {
 }
 
 .pricing .heading p {
-    color: #C6A85F;
+    color: #7a7a7a;
     font-size: 18px;
 }
 
@@ -501,7 +440,7 @@ section {
 }
 
 .custom-shape-divider-top-1695417287 .shape-fill {
-    fill: #34eb18;
+    fill: #C6A85F;
 }
 
 .contact .heading {
@@ -513,7 +452,7 @@ section {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
-    color: #fff;
+    color: #111;
     z-index: 1;
 }
 
@@ -535,7 +474,7 @@ section {
 
 .contact .telefon i {
     padding-right: 1rem;
-    color: #34eb18;
+    color: #000;
     font-size: 80px;
 }
 
@@ -556,10 +495,7 @@ section {
     border-radius: 20%;
     padding-right: 10px;
     padding-left: 3px;
-    color: #fff;; 
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    color: #000;
 }
 
 .parallax-section3 {
@@ -1024,6 +960,10 @@ section {
 
 .qa-item:hover {
     animation: bounce 2s;
+}
+
+.feature-content .feature:hover {
+    animation: bounce 0.5s infinite;
 }
 
 @keyframes bounce {

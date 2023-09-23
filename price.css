@@ -3,6 +3,7 @@
 /* Center-align the content of the pricing section */
 #pricing {
   text-align: center;
+  background-color: #f4f4f4;
 }
 
 /* Style the heading */
@@ -14,7 +15,7 @@
   font-family: 'Lato', Arial, sans-serif;
   margin-top: 100px;
   margin-bottom: 100px;
-  border: solid #f7be2f 4px;
+  border: solid #C6A85F 4px;
   /* Add any other styling for pricing plans */
 }
 
@@ -26,19 +27,20 @@
   min-width: 280px;
   max-width: 100%;
   position:relative;
+  background-color: #f4f4f4;
 }
 
 .entry-title {
-  background: #0000FF;
+  background: #C6A85F;
   height: 140px;
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
 }
 
 .entry-title>h3 {
-  background: #0000FF;
+  background: #C6A85F;
   font-size: 20px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -49,7 +51,7 @@
 .entry-title .price {
   position: absolute;
   bottom: -25px;
-  background: #0000FF;
+  background: #000;
   height: 95px;
   width: 95px;
   margin: 0 auto;
@@ -57,7 +59,7 @@
   right: 0;
   overflow: hidden;
   border-radius: 50px;
-  border: 5px solid #fff;
+  border: 5px solid #a7a7a7;
   line-height: 80px;
   font-size: 28px;
   font-weight: 700;
@@ -72,57 +74,54 @@
 }
 
 .entry-content {
-  color: #323232;
+  color: #000;
 }
 
 .entry-content ul {
   margin: 0;
   padding: 0;
+  background-color: #fff;
   list-style: none;
   text-align: center;
 }
 
 .entry-content li {
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #C6A85F;
   padding: 10px 0;
 }
 
-.entry-content li:last-child {
-  border: none;
-}
-
 .basic .entry-title {
-  background: #66FF00;
+  background: #C6A85F;
 }
 
 .basic .entry-title > h3 {
-  background: #66FF00;
+  background: #C6A85F;
 }
 
 .basic .price {
-  background: #66FF00;
+  background: #C6A85F;
 }
 
 .standard .entry-title {
-  background: #FFFF00;
+  background: #C6A85F;
 }
 
 .standard .entry-title > h3 {
-  background: #FFFF00;
+  background: #C6A85F;
 }
 
 .standard .price {
-  background: #FFFF00;
+  background: #C6A85F;
 }
 
 .ultimite .entry-title > h3 {
-  background: #FF0800;
+  background: #C6A85F;
 }
 
 .ultimite .entry-title {
-  background: #FF0800;
+  background: #C6A85F;
 }
 
 .ultimite .price {
-  background: #FF0800;
+  background: #C6A85F;
 }
