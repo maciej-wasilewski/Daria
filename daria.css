@@ -1034,3 +1034,19 @@ section {
         transform: translateY(-10px);
     }
 }
+
+/* Add zoom-in animation to images on hover */
+/* Add infinite zoom-in animation to images on hover */
+img:hover {
+    animation: zoom-in 5s infinite alternate;
+}
+
+/* Define the zoom-in animation */
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
