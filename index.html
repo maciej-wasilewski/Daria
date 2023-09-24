@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="footer-style.css">
   <link rel="stylesheet" href="daria.css">
   <link rel="stylesheet" href="price.css">
+  <link rel="stylesheet" href="kontakt.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
   <link rel="icon" href="assets\img\ico2.png">
 </head>
 <body>
@@ -232,30 +235,60 @@
         <!-- Your content or background image goes here -->
     </section>
 
-    
-    
-
-
-    <section class="contact" id="contact">
-        <div class="custom-shape-divider-top-1695417287">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="heading">
-        <h1>Zainteresowanych zapraszam do kontaktu.</h1>
-        </div>
-
-        <div class="wrapper">
-        <div class="telefon">
-            <p><i class="fas fa-phone fa-2xl"></i>+48 793 672 329</p>
-        </div>
-
-        <div class="instagram">
-            <p><a href="https://www.instagram.com/daria_mmi/"><i class="fab fa-instagram fa-2xl"></i></a> @daria_mmi</p>
-        </div>
+    <section class="contact-page">
+      <div class="title">
+        <h1>Zainteresowanych zapraszam do kontaktu</h1>
+      </div>
+      <div class="box">
+      <div class="contact form">
+        <h3>Wyślij wiadomość</h3>
+       <form action="#" method="POST">
+          <div class="form-group">
+              <label for="name">Imię:</label>
+              <input type="text" id="name" name="name" placeholder="Wpisz swoje imię" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Wpisz swój adres email" required>
+          </div>
+          <div class="form-group">
+              <label for="tel">Numer kontaktowy:</label>
+              <input type="tel" id="tel" name="tel" placeholder="+48 123 456 789" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Widaomość:</label>
+              <textarea id="message" name="message" rows="5" placeholder="Pytaj o co chcesz" required></textarea>
+          </div>
+          <div class="form-group">
+              <button type="submit">Wyślij</button>
+          </div>
+      </form>
     </div>
-    </section>
+    <div class="contact info">
+      <h2>Kontakt</h2>
+      <div class="contact-details">
+          <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Just Gym</p>
+          </div>
+          <div class="phone">
+              <i class="fas fa-phone"></i>
+              <p>+48 609 645 678</p>
+          </div>
+          <div class="insta">
+            <a href="https://www.instagram.com/daria_mmi/"><i class="fab fa-instagram"></i></a>
+            <p>@daria_mmi</p>
+          </div>
+      </div>
+  </div>
+  <div class="contact map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39149.11597398783!2d21.009710184917367!3d52.1739706247417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd5e04d29ce1%3A0x65c2e5d6cd5aaa94!2sJust%20GYM!5e0!3m2!1spl!2spl!4v1695591909100!5m2!1spl!2spl" width="440" height="392.4" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div> 
+</section>
+
+    
+    
 
     <footer>
         <div class="footerContainer">
