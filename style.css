@@ -181,3 +181,26 @@ header {
         margin-bottom: 0;
     }
 }
+
+   /* Add a media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    /* Adjust the font size and padding for mobile devices */
+    .nav {
+        font-size: 1.2rem;
+        padding: 1em 0;
+        overflow-x: auto; /* Add horizontal scroll if needed */
+        white-space: nowrap; /* Prevent menu items from wrapping */
+    }
+
+    .nav ol li {
+        margin: 0; /* Remove margin to avoid extra space */
+    }
+
+    .nav ol li a {
+        padding: 1em; /* Increase the padding for menu items */
+    }
+}
+
+
+        
+
