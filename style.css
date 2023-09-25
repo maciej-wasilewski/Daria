@@ -166,8 +166,18 @@ header {
 }
 
 @media (max-width: 700px) {
-    .nav ol {
-        flex-direction: column;
-        text-align: center;
+    /* Adjust the font size and padding for mobile devices */
+    .nav {
+        font-size: 1.2rem;
+        padding: 1em 0;
+    }
+
+    .nav ol li a {
+        padding: 1em; /* Increase the padding for menu items */
+    }
+
+    /* Remove the margin on the last menu item to avoid extra space */
+    .nav ol li:last-child {
+        margin-bottom: 0;
     }
 }

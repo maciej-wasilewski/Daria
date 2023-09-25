@@ -501,24 +501,6 @@ section {
 /* Add more styling for your map here */
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .contact-page {
-        padding: 20px;
-    }
-
-    .contact-page .box {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "form"
-        "info"
-        "map";
-    }
-
-    .contact-page .contact {
-        margin-top: 10px;
-    }
-}
 
 /* Add a media query for tablet-sized screens */
 @media (max-width: 768px) {
@@ -758,22 +740,24 @@ section {
 
     }
 
-    .contact {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-        font-size: 16px;
+    .contact-page {
+        /* Adjust styles for tablet screens */
+        padding: 20px; /* Reduce padding for smaller screens */
     }
 
-    .contact .wrapper {
-        flex-direction: column;
-        align-items: center;
-        font-size: 16px;
+    .contact-page .box {
+        /* Adjust grid layout for smaller screens */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
     }
 
-    .contact .telefon,
-    .contact .instagram {
-        margin-top: 0; /* Reset margin-top for contact items */
+    .contact-page .contact {
+        /* Margin adjustments for smaller screens */
+        margin-top: 10px;
     }
     
 }
@@ -847,6 +831,40 @@ section {
 
     .qa .qa-container p {
         font-size: 13px;
+    }
+
+    .contact-page {
+        /* Further adjustments for mobile screens */
+        padding: 10px; /* Reduce padding for very small screens */
+    }
+
+    .contact-page .box {
+        /* Adjust grid layout for mobile screens */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .contact-page .contact {
+        /* Margin adjustments for mobile screens */
+        margin-top: 5px;
+    }
+
+    /* Additional styling for form inputs on mobile screens */
+    .contact-page .form input[type="text"],
+    .contact-page .form input[type="email"],
+    .contact-page .form input[type="tel"],
+    .contact-page .form textarea {
+        font-size: 16px; /* Adjust font size for better readability on small screens */
+    }
+
+    /* Additional styling for submit button on mobile screens */
+    .contact-page .form button[type="submit"] {
+        padding: 8px 16px; /* Adjust button padding for mobile screens */
+        font-size: 18px; /* Increase font size for better visibility on small screens */
     }
   }
 
