@@ -30,9 +30,18 @@ header {
     transition: background-color 0.3s ease;
   }
 
-#logo_piechota {
-    max-width: 80px;
+.insta-icon {
     z-index: 2;
+}
+
+.insta-icon a {
+    color: white;
+}
+
+.insta-icon i {
+    font-size: 40px;
+    color: white;
+
 }
 
 .nav {
@@ -145,6 +154,10 @@ header {
         text-align: center;
     }
 
+    .insta-icon i {
+        margin-top: 20px;
+    }
+
     .social-icons {
         display: flex;
         justify-content: space-around;
@@ -214,4 +227,5 @@ header {
 
 
         
+
 
