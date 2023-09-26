@@ -764,7 +764,7 @@ section {
         }
     
         .about .image img {
-            max-width: 410px; /* Set the maximum width */
+            max-width: 340px; /* Set the maximum width */
             height: 579px; /* Set the height */
             width: 100%; /* Ensure it scales proportionally */
             margin: 0; /* Remove margins */
@@ -895,16 +895,4 @@ section {
 
 /* Add zoom-in animation to images on hover */
 /* Add infinite zoom-in animation to images on hover */
-img:hover {
-    animation: zoom-in 5s infinite alternate;
-}
 
-/* Define the zoom-in animation */
-@keyframes zoom-in {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.1);
-    }
-}

@@ -218,6 +218,7 @@ header {
 
     .nav ol li {
         margin: 0; /* Remove margin to avoid extra space */
+        margin-bottom: 15px;
     }
 
     .nav ol li a {

@@ -108,13 +108,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-
-    #logo_piechota_footer {
-        margin-left: 10%;
-    }
     
     .footerNav ul {
         flex-direction: column;
+        margin-right: 30px;
+        justify-content: center;
     }
 
     .footerNav ul li {
