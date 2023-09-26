@@ -50,36 +50,71 @@ section {
 
 
 /* Home section */
+/* Home section */
+/* Home section */
+/* Home section */
 .home {
-    min-height: 100vh; /* Set a minimum height to cover the entire viewport */
-    background-size: cover !important;
-    padding: 0; /* Remove padding for the .home section */
+    min-height: 100vh;
+    padding: 0;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center horizontally */
+    overflow: hidden;
+    position: relative;
 }
 
-/* Slide in home section */
-.home .slide {
-    height: 120vh; /* Set a minimum height to cover the entire viewport */
-    min-width: 100%;
-    background: url(marcinidaria.jpg) no-repeat;
-    background-size: cover; /* Ensure the background image covers the entire .slide */
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center content vertically and horizontally */
+/* Video background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
+
+/* Background overlay */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the background color and adjust opacity as needed */
+    z-index: -1;
+}
+
+/* Centered content */
+.centered-content {
+    text-align: center; /* Center the content horizontally */
+    z-index: 1; /* Place it above the background overlay */
+}
+
 /* Content in home section */
 .home .content {
     width: 79rem;
 }
 
-/* Heading 3 in content */
-.home .content h3 {
+/* Heading 1 in content */
+.home .content h1 {
     font-size: 5rem;
     color: #fff;
+    margin: 0; /* Adjust the margin-bottom to control the spacing */
     padding: 1rem 0;
+    letter-spacing: 10px;
 }
+
+/* Heading 3 in content */
+.home .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin: -40px 0; /* Remove any top margin */
+    padding: 1rem 0;
+    letter-spacing: 20px;
+}
+
+
 
 /* About section styles */
 .about {
@@ -173,6 +208,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 100px;
+    justify-content: center; 
     /* Add other styles for the grid container */
 }
 
@@ -478,109 +514,15 @@ section {
 }
 
 .contact-page .map {
-    position: relative;
-    width: 440px; /* Set a maximum width to ensure it fits within the parent div */
-    height: 392.4px;
-    overflow: hidden; /* Hide any overflowing content */
-    display: flex; /* Use flexbox to center the iframe */
-    justify-content: center; /* Horizontally center the iframe */
-    align-items: center; /* Vertically center the iframe */
+    padding: 0;
 }
 
 .contact-page .map iframe {
-    min-width: 440px !important;/* Make the iframe fill its container width */
-    height: 392.4px; /* Make the iframe fill its container height */
+    width: 100%;/* Make the iframe fill its container width */
+    height: 100%; /* Make the iframe fill its container height */
     border: none;
     margin: 0;
 }
-
-
-
-
-
-/* Add more styling for your map here */
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .contact-page {
-        padding: 20px;
-    }
-
-    .contact-page .box {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "form"
-        "info"
-        "map";
-    }
-
-    .contact-page .contact {
-        margin-top: 10px;
-    }
-}
-
-/* Add a media query for tablet-sized screens */
-@media (max-width: 768px) {
-    .contact-page {
-        /* Adjust styles for tablet screens */
-        padding: 20px; /* Reduce padding for smaller screens */
-    }
-
-    .contact-page .box {
-        /* Adjust grid layout for smaller screens */
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "form"
-            "info"
-            "map";
-    }
-
-    .contact-page .contact {
-        /* Margin adjustments for smaller screens */
-        margin-top: 10px;
-    }
-}
-
-/* Add a media query for mobile-sized screens */
-@media (max-width: 480px) {
-    .contact-page {
-        /* Further adjustments for mobile screens */
-        padding: 10px; /* Reduce padding for very small screens */
-    }
-
-    .contact-page .box {
-        /* Adjust grid layout for mobile screens */
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            "form"
-            "info"
-            "map";
-    }
-
-    .contact-page .contact {
-        /* Margin adjustments for mobile screens */
-        margin-top: 5px;
-    }
-
-    /* Additional styling for form inputs on mobile screens */
-    .contact-page .form input[type="text"],
-    .contact-page .form input[type="email"],
-    .contact-page .form input[type="tel"],
-    .contact-page .form textarea {
-        font-size: 16px; /* Adjust font size for better readability on small screens */
-    }
-
-    /* Additional styling for submit button on mobile screens */
-    .contact-page .form button[type="submit"] {
-        padding: 8px 16px; /* Adjust button padding for mobile screens */
-        font-size: 18px; /* Increase font size for better visibility on small screens */
-    }
-}
-
-
 
 
 .parallax-section3 {
@@ -611,11 +553,12 @@ section {
     }
 
     .home .content h3 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .about {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 2rem;
         padding-bottom: 20px;
@@ -625,37 +568,47 @@ section {
 
     .about .image {
         flex: 1 1 100%;
+        justify-content: center;
         align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 50px;
     }
 
     .about .image img {
         max-width: 100%;
         height: 804px;
         width: 570px;
-        margin-right: 150px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .about .content {
+        display: flex; /* Use flexbox for centering */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
         flex: 1 1 100%;
-        margin-bottom: 10px; /* Adjust margin as needed */
-        margin-left: 130px;
-    }
+        margin-bottom: 50px; /* Adjust margin as needed */
+        margin-left: 0;
+        margin-right: 0;
 
+    }
+    
     .about .content h1 {
-        font-size: 60px;
-        height: 143px;
-        width: 984px;
-        margin-left: 30px;
-        margin-top: -40px;
-        
+        font-size: 40px;
+        width: 100%;
+        text-align: center; /* Center-align the text */
+        margin: 0; /* Reset margin */
     }
-
+    
     .about .content p {
         font-size: 18px;
-        height: 439px;
-        width: 941px;
-        
+        width: 100%;
+        text-align: center; /* Center-align the text */
+        margin: 0; /* Reset margin */
     }
+    
 
     .feature-content {
         grid-template-columns: repeat(2, 1fr); /* Change to a 2-column grid */
@@ -678,6 +631,12 @@ section {
         align-items: center;
         gap: 2rem;
     
+    }
+
+    .contact-page .contact-details p {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 20px;
     }
 
 }
@@ -758,22 +717,24 @@ section {
 
     }
 
-    .contact {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-        font-size: 16px;
+    .contact-page {
+        /* Adjust styles for tablet screens */
+        padding: 20px; /* Reduce padding for smaller screens */
     }
 
-    .contact .wrapper {
-        flex-direction: column;
-        align-items: center;
-        font-size: 16px;
+    .contact-page .box {
+        /* Adjust grid layout for smaller screens */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
     }
 
-    .contact .telefon,
-    .contact .instagram {
-        margin-top: 0; /* Reset margin-top for contact items */
+    .contact-page .contact {
+        /* Margin adjustments for smaller screens */
+        margin-top: 10px;
     }
     
 }
@@ -847,6 +808,48 @@ section {
 
     .qa .qa-container p {
         font-size: 13px;
+    }
+
+    .contact-page {
+        /* Further adjustments for mobile screens */
+        padding: 10px; /* Reduce padding for very small screens */
+        min-width: 100%;
+        margin: 0 0;
+        text-align: center;
+    }
+
+    .contact-page .title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .contact-page .box {
+        /* Adjust grid layout for mobile screens */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .contact-page .contact {
+        /* Margin adjustments for mobile screens */
+        margin-top: 5px;
+    }
+
+    /* Additional styling for form inputs on mobile screens */
+    .contact-page .form input[type="text"],
+    .contact-page .form input[type="email"],
+    .contact-page .form input[type="tel"],
+    .contact-page .form textarea {
+        font-size: 11px; /* Adjust font size for better readability on small screens */
+    }
+
+    /* Additional styling for submit button on mobile screens */
+    .contact-page .form button[type="submit"] {
+        padding: 8px 8px; /* Adjust button padding for mobile screens */
+        font-size: 14px; /* Increase font size for better visibility on small screens */
     }
   }
 

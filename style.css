@@ -30,9 +30,18 @@ header {
     transition: background-color 0.3s ease;
   }
 
-#logo_piechota {
-    max-width: 80px;
+.insta-icon {
     z-index: 2;
+}
+
+.insta-icon a {
+    color: white;
+}
+
+.insta-icon i {
+    font-size: 40px;
+    color: white;
+
 }
 
 .nav {
@@ -145,6 +154,10 @@ header {
         text-align: center;
     }
 
+    .insta-icon i {
+        margin-top: 20px;
+    }
+
     .social-icons {
         display: flex;
         justify-content: space-around;
@@ -165,9 +178,54 @@ header {
     }
 }
 
-@media (max-width: 700px) {
-    .nav ol {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 768px) {
+    /* Adjust the font size and padding for mobile devices */
+    .nav {
+        font-size: 0.9rem;
+        padding: 1em 0;
+        max-width: 100%;
+    }
+
+    .sticky {
+        max-width: 100%;
+    }
+
+    .nav ol li a {
+        padding: 1em; /* Increase the padding for menu items */
+    }
+
+    /* Remove the margin on the last menu item to avoid extra space */
+    .nav ol li:last-child {
+        margin-bottom: 0;
     }
 }
+
+   /* Add a media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    /* Adjust the font size and padding for mobile devices */
+    .nav {
+        font-size: 1.2rem;
+        padding: 1em 0;
+        max-width: 100%;
+        overflow-x: auto; /* Add horizontal scroll if needed */
+        white-space: nowrap; /* Prevent menu items from wrapping */
+    }
+
+    .sticky {
+        max-width: 100%;
+    }
+
+
+    .nav ol li {
+        margin: 0; /* Remove margin to avoid extra space */
+    }
+
+    .nav ol li a {
+        padding: 1em; /* Increase the padding for menu items */
+    }
+}
+
+
+        
+
+
