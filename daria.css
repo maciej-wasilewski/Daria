@@ -50,36 +50,71 @@ section {
 
 
 /* Home section */
+/* Home section */
+/* Home section */
+/* Home section */
 .home {
-    min-height: 100vh; /* Set a minimum height to cover the entire viewport */
-    background-size: cover !important;
-    padding: 0; /* Remove padding for the .home section */
+    min-height: 100vh;
+    padding: 0;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center horizontally */
+    overflow: hidden;
+    position: relative;
 }
 
-/* Slide in home section */
-.home .slide {
-    height: 120vh; /* Set a minimum height to cover the entire viewport */
-    min-width: 100%;
-    background: url(marcinidaria.jpg) no-repeat;
-    background-size: cover; /* Ensure the background image covers the entire .slide */
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center content vertically and horizontally */
+/* Video background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
+
+/* Background overlay */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the background color and adjust opacity as needed */
+    z-index: -1;
+}
+
+/* Centered content */
+.centered-content {
+    text-align: center; /* Center the content horizontally */
+    z-index: 1; /* Place it above the background overlay */
+}
+
 /* Content in home section */
 .home .content {
     width: 79rem;
 }
 
-/* Heading 3 in content */
-.home .content h3 {
+/* Heading 1 in content */
+.home .content h1 {
     font-size: 5rem;
     color: #fff;
+    margin: 0; /* Adjust the margin-bottom to control the spacing */
     padding: 1rem 0;
+    letter-spacing: 10px;
 }
+
+/* Heading 3 in content */
+.home .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin: -40px 0; /* Remove any top margin */
+    padding: 1rem 0;
+    letter-spacing: 20px;
+}
+
+
 
 /* About section styles */
 .about {
@@ -518,7 +553,7 @@ section {
     }
 
     .home .content h3 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .about {
