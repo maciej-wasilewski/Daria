@@ -102,16 +102,16 @@ section {
     color: #fff;
     margin: 0; /* Adjust the margin-bottom to control the spacing */
     padding: 1rem 0;
-    letter-spacing: 10px;
+    letter-spacing: 20px;
 }
 
 /* Heading 3 in content */
 .home .content h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #fff;
     margin: -40px 0; /* Remove any top margin */
     padding: 1rem 0;
-    letter-spacing: 20px;
+    letter-spacing: 40px;
 }
 
 
