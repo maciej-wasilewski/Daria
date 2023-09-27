@@ -5,9 +5,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* Smooth scrolling behavior and scroll padding */
@@ -20,7 +25,9 @@ html {
 
 /* Body background color */
 body {
+    position: relative;
     background: #f4f4f4;
+    z-index: 1;
 }
 
 
@@ -39,6 +46,9 @@ section {
     z-index: 1;
 }
 
+
+  
+
 .home,
 .about,
 .features,
@@ -46,15 +56,38 @@ section {
 .contact {
     margin-bottom: 0; /* Adjust the value as needed */
     /* ... (Other styles) ... */
+    z-index: 1;
 }
 
+.separe {
+    max-height: 200px;
+}
+
+.separator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background: url('IMG-4697.jpg') no-repeat center top/cover;
+    z-index: -1;
+}
+
+/* Sections below the separator */
+.features,
+.pricing,
+.contact {
+    margin-top: 50vh; /* Add margin-top to push them below the separator */
+    /* ... (Other styles) ... */
+}
+  
 
 /* Home section */
 /* Home section */
 /* Home section */
 /* Home section */
 .home {
-    min-height: 100vh;
+    min-height: 120vh;
     padding: 0;
     display: flex;
     align-items: center;
@@ -91,6 +124,8 @@ section {
     z-index: 1; /* Place it above the background overlay */
 }
 
+
+
 /* Content in home section */
 .home .content {
     width: 79rem;
@@ -121,12 +156,12 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-    margin-top: -70px;
+    background-color: #f4f4f4;
     gap: .1rem;
     overflow: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-bottom: -20px;
+    z-index: 1;
 
     
 }
@@ -240,26 +275,7 @@ section {
     /* Add other styles for the description */
 }
 
-.parallex {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: -70px;
-    gap: 0.1rem;
-    background: linear-gradient(135deg, #e3b94f 20%, #eed91c 100%);
-    overflow: hidden;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-bottom: -20px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('IMG_E4362.JPG');
-    z-index: 0; /* Ensure the content is below the pseudo-element */
-    color: #fff;
-}
+
 
 /* Add styles for parallax effect */
 /* Style for the Q&A section */
@@ -268,6 +284,7 @@ section {
     background-color: #F9F9F9; /* Add a background color for the container */
     position: relative; /* Add relative positioning to the container */
     overflow: hidden; /* Hide any content that overflows the container */
+    margin-top: 50vh;
 }
 
 .qa h1 {
@@ -334,23 +351,10 @@ section {
 }
 
 
-.parallax-section {
-    height: 400px; /* Adjust the height of the parallax section as needed */
-    background-image: url('2.png'); /* Replace 'your-image.jpg' with your image path */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* This creates the parallax effect */
-    background-repeat: no-repeat;
-    text-align: center; /* Center-align the content if needed */
-    color: #fff; /* Set text color */
-    background-position-y: top;
-}
 
 .pricing {
     
     padding: 50px;
-    margin-top: 50px;
-    margin-top: 100px;
     background-color: #f4f4f4;
 }
 
@@ -363,6 +367,7 @@ section {
     color: #111;
     font-size: 36px;
     font-weight: 900;
+    margin-top: 50px;
 }
 
 .pricing .heading p {
@@ -370,25 +375,18 @@ section {
     font-size: 18px;
 }
 
-.parallax-section2 {
-    height: 400px; /* Adjust the height of the parallax section as needed */
-    background-image: url('IMG-4697.jpg'); /* Replace 'your-image.jpg' with your image path */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* This creates the parallax effect */
-    background-repeat: no-repeat;
-    text-align: center; /* Center-align the content if needed */
-    color: #fff; /* Set text color */
-    background-position-y: top;
-}
 
 .contact-page {
     position: relative;
     width: 100%;
+    min-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px;
-    margin-top: 20px;
+    margin-top: 50vh;
+    background: cover;
+    background-color: #f4f4f4;
+
 }
 
 .contact-page title {
@@ -525,17 +523,7 @@ section {
 }
 
 
-.parallax-section3 {
-    height: 400px; /* Adjust the height of the parallax section as needed */
-    background-image: url('IMG-4697.jpg'); /* Replace 'your-image.jpg' with your image path */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* This creates the parallax effect */
-    background-repeat: no-repeat;
-    text-align: center; /* Center-align the content if needed */
-    color: #fff; /* Set text color */
-    background-position-y: top;
-}
+
 
 /* Responsive styles for smaller screens */
 @media (max-width: 1200px) {
@@ -793,6 +781,14 @@ section {
             margin: 0; /* Remove margins */
         }
 
+        .pricing {
+            margin-bottom: 400px;
+        }
+
+        .pricing .heading {
+            margin-top: 20px;
+        }
+
 
     .qa h1 {
         font-size: 25px;
@@ -854,15 +850,6 @@ section {
   }
 
   /*-------- iPads (portrait and landscape) --------*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-.parallex, .parallax-section, .parallax-section2, .parallax-section3 {
-
-    background-attachment: initial;
-
-}
-}
 
   @keyframes shake {
     0% { transform: translate(0, 0); }

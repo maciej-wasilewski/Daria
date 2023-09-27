@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="price.css">
   <link rel="stylesheet" href="kontakt.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.14.0/rellax.min.js"></script>
+
 
 
   <link rel="icon" href="assets\img\ico2.png">
@@ -78,11 +80,13 @@
 
     </section>
 
-    <section class="parallex">
-        <!-- Your content or background image goes here -->
-    </section>
+    
+    <div class="separator rellax" data-rellax-speed="1">
+    </div>
+
 
     <section class="features" id="features">
+      
 
         <div class="content">
             <h1>Pomogę Ci osiągnąć twoje cele!</h1>
@@ -123,7 +127,10 @@
         </div>
     </section>
 
-    <section class="parallex"></section>
+    <div class="separator rellax" data-rellax-speed="1">
+    </div>
+
+
 
     <section class="qa" id="qa">
         <h1>Najczęściej zadawane pytania</h1>
@@ -150,12 +157,10 @@
             </svg>
         </div>
     </section>
-    
-    <section class="parallax-section">
-        <!-- Your content or background image goes here -->
-    </section>
-    
 
+    <div class="separator rellax" data-rellax-speed="1">
+    </div>
+    
 
     <section class="pricing" id="pricing">
         <div class="heading">
@@ -243,9 +248,6 @@
             </div>
     </section>
 
-    <section class="parallax-section2">
-        <!-- Your content or background image goes here -->
-    </section>
 
     <section class="contact-page" id="contact-page">
       <div class="title">
@@ -330,6 +332,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
         // Wait for the DOM to be ready
         document.addEventListener("DOMContentLoaded", function () {
@@ -358,7 +361,19 @@
     
     
 
-
+    <script>
+      // Initialize Rellax for the specific parallax element
+       
+      let rellax = new Rellax('.rellax', {
+    center: true, // Adjust as needed
+    wrapper: null, // Adjust as needed
+    round: true, // Adjust as needed
+    vertical: true // Adjust as needed
+    
+});
+rellax.destroy()
+      
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         window.addEventListener("scroll", function () {
@@ -366,6 +381,5 @@
           header.classList.toggle("sticky", window.scrollY > 0);
         });
         </script>
-        
 </body>
 </html>
