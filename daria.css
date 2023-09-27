@@ -59,10 +59,6 @@ section {
     z-index: 1;
 }
 
-.separe {
-    max-height: 200px;
-}
-
 .separator {
     position: fixed;
     top: 0;
