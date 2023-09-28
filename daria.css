@@ -796,7 +796,6 @@ section {
         .pricing .plan {
             .plan {
                 display: column;
-                margin: 10px;
                 font-family: 'Lato', Arial, sans-serif;
                 border: solid #C6A85F 4px;
                 /* Add any other styling for pricing plans */
@@ -830,6 +829,7 @@ section {
 
     .contact-page .title {
         margin-top: 30px;
+        margin-bottom: 20px;
         font-size: 26px;
         text-align: center;
     }
