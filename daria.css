@@ -604,12 +604,19 @@ section {
     .pricing {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
     }
 
     .pricing .plan {
         margin-left: 0; /* Reset margin for individual plans */
         text-align: center; /* Center align the plans */
+        margin-top: -10px;
+        margin-bottom: 50px;
+    }
+
+    .pricing .heading {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
     }
 
     .contact {
