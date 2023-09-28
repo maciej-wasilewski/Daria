@@ -750,7 +750,7 @@ section {
         }
     
         .about .image img {
-            max-width: 400px; /* Set the maximum width */
+            max-width: 370px; /* Set the maximum width */
             height: 579px; /* Set the height */
             width: 100%; /* Ensure it scales proportionally */
             margin: 0; /* Remove margins */
