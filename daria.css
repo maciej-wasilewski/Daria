@@ -190,8 +190,8 @@ section {
 
 .about .content h1 {
     color: #000;
-    font-size: 77px;
-    font-weight: 900;
+    font-size: 60px;
+    font-weight: 700;
     margin-bottom: 10px;
     background-color: #C6A85F;
     padding: 33px 33px 33px 33px;
@@ -224,9 +224,11 @@ section {
 }
 
 .features .content h1 {
-    font-size: 36px; /* Adjust the font size as needed */
+    font-size: 28px; /* Adjust the font size as needed */
     font-weight: bold;
     margin-bottom: 20px; /* Add margin to separate the h1 from the paragraph */
+    text-align: center;
+    display: block;
 }
 
 .features .content p {
@@ -361,7 +363,7 @@ section {
 
 .pricing .heading h1 {
     color: #111;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 900;
     margin-top: 50px;
 }
@@ -748,7 +750,7 @@ section {
         }
     
         .about .image img {
-            max-width: 340px; /* Set the maximum width */
+            max-width: 400px; /* Set the maximum width */
             height: 579px; /* Set the height */
             width: 100%; /* Ensure it scales proportionally */
             margin: 0; /* Remove margins */
