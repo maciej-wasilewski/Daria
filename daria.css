@@ -774,6 +774,7 @@ section {
         }
     
         .about .content p {
+            font-size: 15px;
             height: auto;
             width: 100%;
             padding: 1rem; /* Add padding for spacing */
@@ -786,6 +787,20 @@ section {
 
         .pricing .heading {
             margin-top: 20px;
+        }
+
+        .pricing .heading h1 {
+            font-size: 28px;
+        }
+
+        .pricing .plan {
+            .plan {
+                display: column;
+                margin: 10px;
+                font-family: 'Lato', Arial, sans-serif;
+                border: solid #C6A85F 4px;
+                /* Add any other styling for pricing plans */
+              }
         }
 
 
